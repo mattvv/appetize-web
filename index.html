@@ -43,6 +43,10 @@
               <li class="">
                 <a href="#installation">Installation</a>
               </li>
+              <li class="">
+                <a href="#recording">Recording</a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -102,20 +106,48 @@
                   1. Unzip the Appetize.zip file
                 </p>
                 <p>
-                  2. Drag the containted Appetize.framework folder into your Framework’s group in your XCode project
+                  2. Drag the contained Appetize.framework folder into your Framework’s group in your XCode project
+                </p>
+                <p>
+                  <img src="img/setup_1.png" />
+                </p>
+                <p>
+                  <img src="img/setup_2.png" />
                 </p>
                 <p>
                   3. Make sure you check ‘Copy items into destination group’s folder (if needed)’, as well as add to your main Target. 
                 </p>
                 <p>
+                  <img src="img/setup_3.png" />
+                </p>
+
+                <p>
                   4. Drag the Appetize.bundle into your Project’s Main Target’s Copy Bundle Resources ‘Build Phase’
                 </p>
+                <p>
+                  <img src="img/setup_4.png" />
+                </p>
+                <p>
+                  and make sure you check ‘Copy items into destination group’s folder (if needed)
+                </p>
+                <p>
+                  <img src="img/setup_5.png" />
+                </p>
+
               </div>
                   <hr class="soften">
               <div class="item">
                 <h2>Step 3: Configure the Appetize.Framework in XCode</h2>
                 <p>1. Select your Project in the Project Navigator</p>
+                <p>
+                  <img src="img/setup_6.png" />
+                </p>
+
                 <p>2. Select the “Build Phases” then expand the ‘Link Binary with Library’ and press the plus + icon to add more libraries...</p>
+                <p>
+                  <img src="img/setup_7.png" />
+                </p>
+
                 <p>Then add the following Libraries:<br/>
                 - QuartzCore<br/>
                 - AVFoundation<br/>
@@ -125,6 +157,10 @@
                 - AssetsLibrary<br/>
                 - MediaPlayer</p>
                 <p>
+                <p>
+                  <img src="img/setup_8.png" />
+                </p>
+
               </div>
                   <hr class="soften">
               <div class="item">
@@ -136,6 +172,11 @@
                   <p><textarea>[[Appetize sharedEngine] initializeWithApplication: application];</textarea></p>
                 </p>
               </div>
+              <hr class="soften">
+              <div class="item">
+                <h2>Step 5: You're Done!</h2>
+              </div>
+
             </div>
             <!-- Carousel nav -->
 <!--             <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -144,8 +185,18 @@
         </div> -->
       </div>
     </div>
-  </div>
 
+    <hr class="soften">
+    <a name="recording" id="recording"></a>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>Recording with Appetize</h1>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/XA1BrK1AFyc" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
