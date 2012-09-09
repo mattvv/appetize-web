@@ -106,22 +106,32 @@
                 <p>
                   3. Make sure you check ‘Copy items into destination group’s folder (if needed)’, as well as add to your main Target. 
                 </p>
+                <p>
+                  4. Drag the Appetize.bundle into your Project’s Main Target’s Copy Bundle Resources ‘Build Phase’
+                </p>
               </div>
               <div class="item">
-                <h2>Step 3</h2>
-                Blah
+                <h2>Step 3: Configure the Appetize.Framework in XCode</h2>
+                <p>1. Select your Project in the Project Navigator</p>
+                <p>2. Select the “Build Phases” then expand the ‘Link Binary with Library’ and press the plus + icon to add more libraries...</p>
+                <p>Then add the following Libraries:<br/>
+                - QuartzCore<br/>
+                - AVFoundation<br/>
+                - CoreMedia<br/>
+                - CoreVideo<br/>
+                - UIKit<br/>
+                - AssetsLibrary<br/>
+                - MediaPlayer</p>
+                <p>
               </div>
               <div class="item">
-                <h2>Step 3</h2>
-                Blah
-              </div>
-              <div class="item">
-                <h2>Step 3</h2>
-                Blah
-              </div>
-                      <div class="item">
-                <h2>Step 3</h2>
-                Blah
+                <h2>Step 4: Initialize Library</h2>
+                <p>
+                  Open your Application Delegate (AppDelegate) and import the following header:
+                  <pre>#import &lsaquo;Appetize/Appetize.h&rsaquo;</pre>
+                  then add the following line of code in your <strong>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions”</strong> method:
+                  <pre>[[Appetize sharedEngine] initializeWithApplication: application];</pre>
+                </p>
               </div>
             </div>
             <!-- Carousel nav -->
